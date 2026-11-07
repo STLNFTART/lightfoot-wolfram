@@ -1,0 +1,113 @@
+{
+    "author":  "Donte Lightfoot",
+    "github":  "STLNFTART",
+    "run":  "wolframscript -file run_all_validations.wls",
+    "certificateWithoutWolfram":  "python verify_linked_math.py",
+    "projects":  [
+                     {
+                         "id":  "lightfoot",
+                         "name":  "Lightfoot constant",
+                         "formula":  "mu = Log[D0] / (3 Pi^2), D0 = 150",
+                         "wls":  "lightfoot_derivation.wls",
+                         "source":  "local project lightfoot"
+                     },
+                     {
+                         "id":  "primal_logic_kernel",
+                         "name":  "Primal logic kernel equilibrium",
+                         "formula":  "K = gain * gating * forcing - mu * state",
+                         "wls":  "primal_logic_kernel.wls",
+                         "source":  "local project primal_logic_kernel"
+                     },
+                     {
+                         "id":  "primal_control",
+                         "name":  "Primal control ODE and sample Lyapunov bound",
+                         "formula":  "x\u0027 = alpha theta - lambda x",
+                         "wls":  "primal_control.wls",
+                         "source":  "local project primal_control"
+                     },
+                     {
+                         "id":  "lyapunov_bound",
+                         "name":  "Lyapunov completed square",
+                         "formula":  "upper - Vdot = (lambda x - alpha theta)^2 / (2 lambda)",
+                         "wls":  "lyapunov_bound.wls",
+                         "source":  "local project lyapunov_bound"
+                     },
+                     {
+                         "id":  "protein_cymatics",
+                         "name":  "Protein resonance modes",
+                         "formula":  "omega = omega0 Sqrt[m^2 + n^2 + p^2]",
+                         "wls":  "protein_cymatics.wls",
+                         "source":  "local project protein_cymatics"
+                     },
+                     {
+                         "id":  "gate_angle",
+                         "name":  "Cymatics gate angle",
+                         "formula":  "phi = 2 Pi omega t (1/3) Sin[Pi k / N]",
+                         "wls":  "gate_angle.wls",
+                         "source":  "local project gate_angle"
+                     },
+                     {
+                         "id":  "memory_kernel",
+                         "name":  "Exponential memory kernel",
+                         "formula":  "K(tau) = alpha Exp[-alpha tau], Laplace alpha/(s+alpha)",
+                         "wls":  "memory_kernel.wls",
+                         "source":  "local project memory_kernel"
+                     },
+                     {
+                         "id":  "diffusion_kernel",
+                         "name":  "Heat-equation fundamental solution",
+                         "formula":  "u = (4 Pi t)^(-1/2) Exp[-x^2/(4 t)]",
+                         "wls":  "diffusion_kernel.wls",
+                         "source":  "local project diffusion_kernel"
+                     },
+                     {
+                         "id":  "diffusion_recovery",
+                         "name":  "Memory rate recovered from the slab eigenvalue",
+                         "formula":  "alpha = kappa (Pi/L)^2 = Log[D0]/(3 Pi^2)",
+                         "wls":  "diffusion_recovery.wls",
+                         "source":  "local project diffusion_recovery"
+                     },
+                     {
+                         "id":  "dbit_stability",
+                         "name":  "DBITS Jacobian stability box",
+                         "formula":  "rho(J) \u003c 1 for delta, lambda in [0.2, 0.4] and |a_c kappa| \u003c= 0.1",
+                         "wls":  "dbit_stability.wls",
+                         "source":  "https://github.com/STLNFTART/dbits-validation"
+                     },
+                     {
+                         "id":  "cpl_heisenberg",
+                         "name":  "Primal-Heisenberg C_PL",
+                         "formula":  "C_PL(t) = a_x a_p (1 - Exp[-(lx+lp) t]) / (lx+lp)",
+                         "wls":  "cpl_heisenberg.wls",
+                         "source":  "https://github.com/STLNFTART/dbits-validation"
+                     },
+                     {
+                         "id":  "symbolic_recursion",
+                         "name":  "Symbolic recursion memory fixed point",
+                         "formula":  "s = a q dt / (1 - Exp[-mu dt]) -\u003e a q / mu",
+                         "wls":  "symbolic_recursion.wls",
+                         "source":  "https://github.com/STLNFTART/symbolic-recursion-coherence"
+                     },
+                     {
+                         "id":  "coherence_score",
+                         "name":  "Coherence retention score",
+                         "formula":  "0.5 phase + 0.3 energy + 0.2 stability",
+                         "wls":  "coherence_score.wls",
+                         "source":  "https://github.com/STLNFTART/symbolic-recursion-coherence"
+                     },
+                     {
+                         "id":  "quantro_base",
+                         "name":  "Quantro base models with overlays off",
+                         "formula":  "Michaelis-Menten, FitzHugh-Nagumo, Nernst, Poiseuille, SIR, time-warp floor",
+                         "wls":  "quantro_base.wls",
+                         "source":  "Quantro-Heart-Model base equations"
+                     }
+                 ],
+    "notIncluded":  [
+                        "MATLAB home_defense_ai scripts are application code, not a derivation.",
+                        "Lambda command, stealth, and frequency-hop protocol code was not published.",
+                        "primal-quantum-validation states that its core kernel is not open.",
+                        "tactical-ai, primal_monorepo, KV1, and 3IA-Atlas were not opened.",
+                        "Multi-Heart-Model APL files are placeholders. The base equations are the Quantro ones."
+                    ]
+}

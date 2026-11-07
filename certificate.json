@@ -1,0 +1,111 @@
+{
+  "engine": "sympy-numpy mirror of Wolfram Language scripts",
+  "wolframEngineOnPath": false,
+  "passCount": 14,
+  "checkCount": 14,
+  "allPass": true,
+  "checks": [
+    {
+      "id": "lightfoot",
+      "pass": true,
+      "wls": "lightfoot_derivation.wls",
+      "mu": 0.1692278329326353,
+      "claim": 0.16905,
+      "absError": 0.0001778329326352912
+    },
+    {
+      "id": "primal_logic_kernel",
+      "pass": true,
+      "wls": "primal_logic_kernel.wls",
+      "state": 4.727354750908244,
+      "residual": 0.0
+    },
+    {
+      "id": "primal_control",
+      "pass": true,
+      "wls": "primal_control.wls",
+      "equilibrium": 14.772983596588261,
+      "xAt20": 14.272287811979794,
+      "xDot": 0.0
+    },
+    {
+      "id": "lyapunov_bound",
+      "pass": true,
+      "wls": "lyapunov_bound.wls",
+      "identity": "0",
+      "minNumericGap": 2.9004450540941044e-05
+    },
+    {
+      "id": "protein_cymatics",
+      "pass": true,
+      "wls": "protein_cymatics.wls",
+      "maxError": 3.4151912409186025e-09
+    },
+    {
+      "id": "gate_angle",
+      "pass": true,
+      "wls": "gate_angle.wls",
+      "phi": 0.20883644383035116
+    },
+    {
+      "id": "memory_kernel",
+      "pass": true,
+      "wls": "memory_kernel.wls",
+      "laplaceError": 9.416040863685637e-10,
+      "alpha": 0.1692278329326353
+    },
+    {
+      "id": "diffusion_kernel",
+      "pass": true,
+      "wls": "diffusion_kernel.wls",
+      "heatResidual": "0"
+    },
+    {
+      "id": "diffusion_recovery",
+      "pass": true,
+      "wls": "diffusion_recovery.wls",
+      "identity": "0"
+    },
+    {
+      "id": "dbit_stability",
+      "pass": true,
+      "wls": "dbit_stability.wls",
+      "sampleCount": 567,
+      "maxRho": 0.9414213562373095,
+      "attractorFinalError": 0.43973345110404694
+    },
+    {
+      "id": "cpl_heisenberg",
+      "pass": true,
+      "wls": "cpl_heisenberg.wls",
+      "sampleAt1": 0.6321205588285577,
+      "derivativeAt0": "ap*ax"
+    },
+    {
+      "id": "symbolic_recursion",
+      "pass": true,
+      "wls": "symbolic_recursion.wls",
+      "identity": "0",
+      "fixedPoint": 5.914194848867182,
+      "target": 5.909193438635304
+    },
+    {
+      "id": "coherence_score",
+      "pass": true,
+      "wls": "coherence_score.wls",
+      "identical": 0.9999999999999944,
+      "flipped": 0.4999999999999946
+    },
+    {
+      "id": "quantro_base",
+      "pass": true,
+      "wls": "quantro_base.wls",
+      "michaelisMenten": true,
+      "fitzhughNagumo": true,
+      "nernst": true,
+      "poiseuille": true,
+      "sir": true,
+      "timeWarpFloor": true
+    }
+  ]
+}
